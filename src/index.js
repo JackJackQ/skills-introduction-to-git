@@ -288,7 +288,7 @@ function checkPatternMatch() {
       }
     }
   }
-}
+}cleat
         setNewTargetPattern();
         return;
       }
