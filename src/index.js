@@ -340,7 +340,7 @@ function updateScore() {
 }
 // Handle keyboard input
 function handleKeyPress(e) {
-git   if (gameOver) return;
+   if (gameOver) return;
 
   switch (e.key) {
     case "ArrowLeft":
