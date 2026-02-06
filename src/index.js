@@ -271,12 +271,6 @@ function checkPatternMatch() {
       if (matchesPattern(startRow, startCol)) {
         clearPattern(startRow, startCol);
         score += 100;
-        function checkPatternMatch() {
-  for (let startRow = 0; startRow <= ROWS - PATTERN_SIZE; startRow++) {
-    for (let startCol = 0; startCol <= COLS - PATTERN_SIZE; startCol++) {
-      if (matchesPattern(startRow, startCol)) {
-        clearPattern(startRow, startCol);
-        score += 100;
         patternsCleared++;
         if (patternsCleared % 5 === 0) {
           level++;
@@ -284,12 +278,6 @@ function checkPatternMatch() {
           document.getElementById("level").textContent = level;
         }
         updateScore();
-        setNewTargetPattern();
-        return;
-      }
-    }
-  }
-}cleat
         setNewTargetPattern();
         return;
       }
@@ -325,9 +313,6 @@ function clearPattern(startRow, startCol) {
 }
 
 // Update score display
-function updateScore() {
-  document.getElementById("score").textContent = score;
-}
 function updateScore() {
   document.getElementById("score").textContent = score;
 
